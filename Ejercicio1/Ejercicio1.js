@@ -2,7 +2,7 @@ let r =0;
 let g= 0;
 let b = 255;
 let inicio=0;
-let finale=200;
+let finale=120;
 
 function setup() {
   createCanvas(850,650);
