@@ -4,30 +4,25 @@ let speed = 5;
 let img;
 
 function preload() {
-  img = loadImage('Media\hedwig.jpg');
+  img = loadImage('remera.png');
 }
 function setup() {
-  createCanvas(400, 400);
+  createCanvas(700, 600);
 }
 
 function draw() {
   background(220);
-  image(img, x, y, 50, 50); 
+  image(img, x, y, 300, 500); 
   noStroke();
 }
 function keyPressed(){
-  if(key == 'a'){
-    x--;  
-  }
-  if(key == 'd'){
-    x++;  
-  }
-  if(key == 's'){
-    y++;  
-  }
-  if(key == 'w'){
-    y--;  
+  if(keyCode === 65){
+    x-=speed;  
+  }else if(keyCode === 68){
+    x+=speed;  
+  }else if(keyCode === 83){
+    y+=speed;  
+  }else if(keyCode === 87){
+    y-=speed  
   }
 }
-
-
